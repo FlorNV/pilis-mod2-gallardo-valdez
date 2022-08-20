@@ -1,35 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feria de plantas</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <header>
-
+      <nav class="flex-container">
+        <ul class="flex-item">
+          <li><a href="#organizers">Organizadores</a></li>
+          <li><a href="#event">Evento</a></li>
+          <li><a href="#contact">Registrate</a></li>
+        </ul>
+        <h1 class="flex-item"><a href="#home">APOOJUY</a></h1>
+      </nav>
+      <div id="home">
+        <h2>Feria de las plantas</h2>
+        <h3>Juntos potenciamos el comercio jujeño</h3>
+      </div>
     </header>
 
-    <section id="home">
+    <main>
+      <section id="event" class="flex-container">
+        <div class="flex-item">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/caG8u1jw3B0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="flex-item">
+          <h3>Subtitulo</h3>
+          <p>
+            Consequat non consequat irure proident adipisicing labore magna
+            consequat culpa cillum dolore culpa fugiat. Et esse quis culpa sint
+            eiusmod voluptate. Incididunt laboris duis Lorem aliqua cupidatat
+            duis tempor labore ea commodo qui aliqua. Dolore nisi dolore
+            consequat eu mollit quis nulla dolore. Sunt id qui nulla sint
+            nostrud eiusmod ullamco nisi nulla. Ex do commodo do sint dolore est
+            cillum non nulla ullamco. Voluptate aliqua pariatur nisi sunt Lorem.
+            Culpa Lorem reprehenderit sit incididunt occaecat commodo incididunt
+            ex sit anim.
+          </p>
+        </div>
+      </section>
 
-    </section>
+      <section id="organizers" class="flex-container">
+        <div class="flex-item">
+          <h3>Organizadores</h3>
+          <p>
+            Organizado por la Asociación de Productores de Plantas Ornamentales
+            de Jujuy (Appojuy) y la Municipalidad de San Salvador de Jujuy.
+            Productores, cooperativas, coleccionistas y asociaciones de
+            jardineros y cultivadores se distribuyen en más de 60 espacios donde
+            ofrecen plantas y flores de todo tipo. La muestra se desarrolla en
+            la vieja estación de trenes y permanecerá abierta hasta las 19 de
+            este domingo.
+          </p>
+        </div>
+        <div class="flex-item">
+          <img src="./assets/img2.JPG" />
+        </div>
+      </section>
 
-    <section id="">
+      <section id="contact" class="flex-container">
+        <div class="flex-item">
+          <h3>Registrate</h3>
+          <p>
+            Sumáte al evento para potenciar el comercio local. Luego te
+            contactaremos.
+          </p>
+        </div>
+        <div class="flex-item">
+          <h3>Formulario de contacto</h3>
+          <form id="form">
+            <input
+              id="business"
+              class="form-control"
+              type="text"
+              placeholder="Comercio"
+            />
+            <input
+              id="owner"
+              class="form-control"
+              type="text"
+              placeholder="Titular"
+            />
+            <input
+              id="phone"
+              class="form-control"
+              type="text"
+              placeholder="Celular"
+            />
+            <button id="enviar" class="btn">Enviar</button>
+          </form>
+        </div>
+      </section>
 
-    </section>
-
-    <section>
-
-    </section>
-
-    <section>
-
-    </section>
+      <section id="weather">
+        <h3>Asi esta el clima en el lugar del evento</h3>
+        <div>clima</div>
+      </section>
+    </main>
 
     <footer>
-
+      <div class="flex-container">
+        <div class="flex-item">
+          <h4>Redes</h4>
+          <ul>
+            <li>
+              <a href=""><i class="bi bi-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-pinterest"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-item">
+          <p>Preguntas</p>
+          <a href="">Escribinos y te ayudamos ...</a>
+        </div>
+        <div class="flex-item">
+          <a href=""><i class="bi bi-whatsapp"></i>whatsapp</a>
+        </div>
+      </div>
+      <p>2022 &copy; - Todos los derechos reservados</p>
     </footer>
   </body>
 </html>
