@@ -13,13 +13,15 @@
   </head>
   <body>
     <header>
-      <nav class="flex-container">
-        <ul class="flex-item">
-          <li><a href="#organizers">Organizadores</a></li>
+      <nav id="navbar" class="navbar flex-container">
+        <ul class="flex-item navbar-nav">
           <li><a href="#event">Evento</a></li>
+          <li><a href="#organizers">Organizadores</a></li>
           <li><a href="#contact">Registrate</a></li>
         </ul>
-        <h1 class="flex-item"><a href="#home">APOOJUY</a></h1>
+        <h1 class="navbar-icon flex-item">
+          <a href="#home"><img src="./assets/icono.jpg" alt="APPOJUY" /></a>
+        </h1>
       </nav>
       <div id="home">
         <h2>Feria de las plantas</h2>
@@ -27,7 +29,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="container">
       <section id="event" class="flex-container">
         <div class="flex-item">
           <iframe
@@ -41,7 +43,7 @@
           ></iframe>
         </div>
         <div class="flex-item">
-          <h3>Subtitulo</h3>
+          <h3 class="title-section">El evento</h3>
           <p>
             Consequat non consequat irure proident adipisicing labore magna
             consequat culpa cillum dolore culpa fugiat. Et esse quis culpa sint
@@ -58,7 +60,7 @@
 
       <section id="organizers" class="flex-container">
         <div class="flex-item">
-          <h3>Organizadores</h3>
+          <h3 class="title-section">Organizadores</h3>
           <p>
             Organizado por la Asociación de Productores de Plantas Ornamentales
             de Jujuy (Appojuy) y la Municipalidad de San Salvador de Jujuy.
@@ -76,13 +78,13 @@
 
       <section id="contact" class="flex-container">
         <div class="flex-item">
-          <h3>Registrate</h3>
+          <h3 class="title-section">Registrate</h3>
           <p>
             Sumáte al evento para potenciar el comercio local. Luego te
             contactaremos.
           </p>
         </div>
-        <div class="flex-item">
+        <div class="flex-item contact-form">
           <h3>Formulario de contacto</h3>
           <form id="form">
             <input
@@ -109,7 +111,7 @@
       </section>
 
       <section id="weather">
-        <h3>Asi esta el clima en el lugar del evento</h3>
+        <h3>Así esta el clima en el lugar del evento</h3>
         <div>clima</div>
       </section>
     </main>
@@ -117,8 +119,8 @@
     <footer>
       <div class="flex-container">
         <div class="flex-item">
-          <h4>Redes</h4>
-          <ul>
+          <h4>Nuestras redes</h4>
+          <ul class="social-networks">
             <li>
               <a href=""><i class="bi bi-instagram"></i></a>
             </li>
@@ -131,14 +133,16 @@
           </ul>
         </div>
         <div class="flex-item">
-          <p>Preguntas</p>
-          <a href="">Escribinos y te ayudamos ...</a>
+          <h4>Preguntas</h4>
+          <a href="">Escribinos y te ayudamos...</a>
         </div>
         <div class="flex-item">
-          <a href=""><i class="bi bi-whatsapp"></i>whatsapp</a>
+          <a class="whatsapp" href=""><i class="bi bi-whatsapp"></i><span>Nuestro WhatsApp</span></a>
         </div>
       </div>
       <p>2022 &copy; - Todos los derechos reservados</p>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
