@@ -24,8 +24,11 @@
         </h1>
       </nav>
       <div id="home">
-        <h2>Feria de las plantas</h2>
-        <h3>Juntos potenciamos el comercio jujeño</h3>
+        <div class="background-image"></div>
+        <div class="content-home">
+          <h2>Feria de las plantas</h2>
+          <h3>Juntos potenciamos el comercio jujeño</h3>
+        </div>
       </div>
     </header>
 
@@ -33,6 +36,7 @@
       <section id="event" class="flex-container">
         <div class="flex-item">
           <iframe
+            class="border"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/caG8u1jw3B0"
@@ -62,17 +66,21 @@
         <div class="flex-item">
           <h3 class="title-section">Organizadores</h3>
           <p>
-            Organizado por la Asociación de Productores de Plantas Ornamentales
-            de Jujuy (Appojuy) y la Municipalidad de San Salvador de Jujuy.
+            Organizado por la <span>Asociación de Productores de Plantas Ornamentales
+            de Jujuy</span> (Appojuy) y la Municipalidad de San Salvador de Jujuy.
             Productores, cooperativas, coleccionistas y asociaciones de
             jardineros y cultivadores se distribuyen en más de 60 espacios donde
             ofrecen plantas y flores de todo tipo. La muestra se desarrolla en
-            la vieja estación de trenes y permanecerá abierta hasta las 19 de
-            este domingo.
+            la vieja estación de trenes y permanecerá abierta <span>hasta las 19 horas de
+              este domingo</span>.
           </p>
         </div>
-        <div class="flex-item">
-          <img src="./assets/img2.JPG" />
+        <div class="flex-item images">
+          <div class="image-stack">
+            <img class="img-back border" src="./assets/img2.JPG" />
+            <img class="image-stack__item img-top border" src="./assets/img1.jpg" />
+            <img class="image-stack__item img-bottom border" src="./assets/img3.jpg" />
+          </div>
         </div>
       </section>
 
@@ -85,8 +93,8 @@
           </p>
         </div>
         <div class="flex-item contact-form">
-          <h3>Formulario de contacto</h3>
           <form id="form">
+            <h3>Formulario de contacto</h3>
             <input
               id="business"
               class="form-control"
@@ -128,6 +136,9 @@
               <a href=""><i class="bi bi-facebook"></i></a>
             </li>
             <li>
+              <a href=""><i class="bi bi-twitter"></i></a>
+            </li>
+            <li>
               <a href=""><i class="bi bi-pinterest"></i></a>
             </li>
           </ul>
@@ -137,7 +148,9 @@
           <a href="">Escribinos y te ayudamos...</a>
         </div>
         <div class="flex-item">
-          <a class="whatsapp" href=""><i class="bi bi-whatsapp"></i><span>Nuestro WhatsApp</span></a>
+          <a class="whatsapp" href=""
+            ><i class="bi bi-whatsapp"></i><span>Nuestro WhatsApp</span></a
+          >
         </div>
       </div>
       <p>2022 &copy; - Todos los derechos reservados</p>
