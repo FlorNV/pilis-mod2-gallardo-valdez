@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <header>
@@ -27,6 +28,7 @@
         <div class="background-image"></div>
         <div class="content-home">
           <h2>Feria de las plantas</h2>
+          <h2>"La flor más bella"</h2>
           <h3>Juntos potenciamos el comercio jujeño</h3>
         </div>
       </div>
@@ -66,20 +68,29 @@
         <div class="flex-item">
           <h3 class="title-section">Organizadores</h3>
           <p>
-            Organizado por la <span>Asociación de Productores de Plantas Ornamentales
-            de Jujuy</span> (Appojuy) y la Municipalidad de San Salvador de Jujuy.
-            Productores, cooperativas, coleccionistas y asociaciones de
-            jardineros y cultivadores se distribuyen en más de 60 espacios donde
-            ofrecen plantas y flores de todo tipo. La muestra se desarrolla en
-            la vieja estación de trenes y permanecerá abierta <span>hasta las 19 horas de
-              este domingo</span>.
+            Organizado por la
+            <span
+              >Asociación de Productores de Plantas Ornamentales de Jujuy</span
+            >
+            (Appojuy) y la Municipalidad de San Salvador de Jujuy. Productores,
+            cooperativas, coleccionistas y asociaciones de jardineros y
+            cultivadores se distribuyen en más de 60 espacios donde ofrecen
+            plantas y flores de todo tipo. La muestra se desarrolla en la vieja
+            estación de trenes y permanecerá abierta
+            <span>hasta las 19 horas de este domingo</span>.
           </p>
         </div>
         <div class="flex-item images">
           <div class="image-stack">
             <img class="img-back border" src="./assets/img2.JPG" />
-            <img class="image-stack__item img-top border" src="./assets/img1.jpg" />
-            <img class="image-stack__item img-bottom border" src="./assets/img3.jpg" />
+            <img
+              class="image-stack__item img-top border"
+              src="./assets/img1.jpg"
+            />
+            <img
+              class="image-stack__item img-bottom border"
+              src="./assets/img3.jpg"
+            />
           </div>
         </div>
       </section>
@@ -95,25 +106,38 @@
         <div class="flex-item contact-form">
           <form id="form">
             <h3>Formulario de contacto</h3>
-            <input
-              id="business"
-              class="form-control"
-              type="text"
-              placeholder="Comercio"
-            />
-            <input
-              id="owner"
-              class="form-control"
-              type="text"
-              placeholder="Titular"
-            />
-            <input
-              id="phone"
-              class="form-control"
-              type="text"
-              placeholder="Celular"
-            />
-            <button id="enviar" class="btn">Enviar</button>
+            <div class="form-group">
+              <input
+                id="business"
+                class="form-control"
+                type="text"
+                placeholder="Comercio"
+              />
+              <span id="business-error" class="opacity-0"
+                >Ingresa el nombre de tu comercio</span
+              >
+            </div>
+            <div class="form-group">
+              <input
+                id="owner"
+                class="form-control"
+                type="text"
+                placeholder="Titular"
+              />
+              <span id="owner-error" class="opacity-0">Ingresa tu nombre</span>
+            </div>
+            <div class="form-group">
+              <input
+                id="phone"
+                class="form-control"
+                type="text"
+                placeholder="Celular"
+              />
+              <span id="phone-error" class="opacity-0"
+                >Ingresa tu número de celular</span
+              >
+            </div>
+            <button id="send" class="btn">Enviar</button>
           </form>
         </div>
       </section>
@@ -148,7 +172,7 @@
           <a href="">Escribinos y te ayudamos...</a>
         </div>
         <div class="flex-item">
-          <a class="whatsapp" href=""
+          <a class="whatsapp" href="https://walink.co/46e3ad"
             ><i class="bi bi-whatsapp"></i><span>Nuestro WhatsApp</span></a
           >
         </div>
