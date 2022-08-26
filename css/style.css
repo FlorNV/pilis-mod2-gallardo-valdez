@@ -22,7 +22,7 @@ a {
 /* NAVEGADOR */
 
 .navbar {
-    padding: 0.6rem 0 0.3rem;
+    padding: 0.6rem;
     position: fixed;
     left: 0;
     right: 0;
@@ -37,14 +37,15 @@ a {
 .navbar ul.navbar-nav a {
     display: inline-block;
     padding: 0.5rem 1rem;
-    border-bottom: 2px solid transparent;
-    color: #000;
     transition: all 0.5s;
+    color: #FBF4E9;
+    border-radius: 4px;
+    font-weight: 500;
 }
 
 .navbar ul.navbar-nav a:hover {
-    color: #FBF4E9;
-    border-bottom: 2px solid #FBF4E9;
+    background-color: #FBF4E9;
+    color: #000;
 }
 
 .navbar .navbar-icon {
@@ -218,7 +219,6 @@ section p {
 
 .form-group span {
     color: #f53e3e;
-    color: #e63946;
 }
 
 .opacity-0 {
