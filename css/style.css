@@ -22,10 +22,10 @@ a {
 /* NAVEGADOR */
 
 .navbar {
+    padding: 0.6rem 0 0.3rem;
     position: fixed;
     left: 0;
     right: 0;
-    height: 80px;
     transition: 0.8s;
 }
 
@@ -52,10 +52,10 @@ a {
 }
 
 .navbar .navbar-icon img {
-    margin: 1rem;
-    height: 70px;
+    margin: 0 1rem;
+    height: 50px;
     border-radius: 100%;
-    border: 4px solid #FBF4E9;
+    background-color: #FBF4E9;
 }
 
 
@@ -146,14 +146,13 @@ section p {
 
 /* EVENTO */
 
-
-
-/* ORGANIZADORES */
-
-#organizers span {
+#event span, #organizers span {
     color: #6ECB63;
     font-weight: 500;
 }
+
+
+/* ORGANIZADORES */
 
 .flex-item.images .image-stack {
     width: 500px;
@@ -197,11 +196,15 @@ section p {
     color: #aaa;
 }
 
+.form-group {
+    margin-bottom: 1rem;
+}
+
 .form-control {
     display: block;
     width: 100%;
     padding: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.2rem;
     font-size: 1rem;
     border: none;
     border-radius: 4px;
@@ -211,6 +214,23 @@ section p {
 .form-control:focus {
     outline: none;
     background-color: #dfdfdf;
+}
+
+.form-group span {
+    color: #f53e3e;
+    color: #e63946;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
+.invalid {
+    border: 1px solid #f53e3e;
 }
 
 .contact-form .btn {
@@ -243,59 +263,46 @@ section p {
 
 #weather > h3 {
     font-size: 2rem;
+    margin-bottom: 3rem;
 }
 
 .cities .border {
-    width: 30%;
-    margin: 5rem auto 0;
-}
-
-/* Corresponde al contenedor de la card del clima */
-
-  
-  /* Corresponde a la card del clima */
-  #weather .city {
-    padding: 0px 10px 0px 10px;
-    border: 2px solid black;
-    box-shadow: 0px 0px 15px 10px #999;
-    border-radius: 20px;
-    background: #fbf4e9;
-    color: #53627c;
+    max-width: 400px;
     height: 300px;
-  }
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
   
-  #weather figcaption {
+#weather figcaption {
     margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #53627c;
+    color: #aaa;
     font-weight: bold;
-  }
-  
-  /* Corresponde a la temperatura 29.5°C*/
-  #weather .city-temp {
+}
+
+/* Corresponde a la temperatura */
+#weather .city-temp {
     font-size: 2rem;
     font-weight: bold;
     margin-top: 5px;
-    color: #1e2432;
-  }
-  
-  #weather .city sup {
-    font-size: 0.5em;
-  }
-  
-  #weather .city-name sup {
+    color: #6ECB63;
+}
+
+#weather .city-name sup {
     padding: 0.2em 0.6em;
     border-radius: 30px;
     color: #fff;
-    background: #ff8c00;
-  }
-  
-  #weather .city-icon {
+    background: #6ECB63;
+}
+
+#weather .city-icon {
     margin-top: 5px;
     width: 100px;
     height: 100px;
-  }
+}
 
 
 /* FOOTER */
@@ -306,13 +313,21 @@ footer {
 
 footer .flex-container {
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 4rem;
 }
 
 footer .flex-container h4 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
+}
+
+.image {
+    justify-self: start;
+}
+
+footer .image img {
+    height: 80px;
 }
 
 .social-networks li {
